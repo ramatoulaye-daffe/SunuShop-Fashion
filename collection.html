@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections - SunuShop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            Sunu<span>Shop</span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="favoris.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="panier.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+  <main>
+        <section class="collection-hero">
+            <p class="collection-title">
+                BIENVENUE CHEZ SUNUSHOP
+            </p>
+            <h1>
+                Découvrez Nos 
+                <span>collections</span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quia ratione architecto nesciunt incidunt molestias vel adipisci,
+                 quam minus, soluta amet vero ullam consectetur suscipit, beatae temporibus rem commodi id.
+            </p>
+            <div class="btn-collect">
+                <a href="commande.html">Commandez maintenant</a>
+            </div>
+        </section>
+
+        <section class="collections-section">
+            <h2>Découvrez nos collections</h2>
+            <div class="collections-grid">
+
+                <a href="#collection-products-section" class="collection-card" data-collection="nouveautes">
+                    <img src="images/nouveautés.jpg" alt="Nouveautés">
+                    <h3>Nouveautés</h3>
+                    <p>Découvrez nos derniers produits.</p>
+                </a>
+                            
+                <a href="#collection-products-section" class="collection-card" data-collection="populaires">
+                    <img src="images/best-sellers.jpg" alt="Produits populaires">
+                    <h3>Meilleures ventes</h3>
+                    <p>Les produits préférés de nos clients.</p>
+                </a>
+
+                <a href="#collection-products-section" class="collection-card" data-collection="enfants">
+                    <img src="images/collection-enfant.jpg" alt="Collection enfants">
+                    <h3>Collection enfants</h3>
+                    <p>Complétez votre style avec nos accessoires.</p>
+                </a>
+
+                <a href="#collection-products-section" class="collection-card" data-collection="promotions">
+                    <img src="images/promo.jpg" alt="Promotions">
+                    <h3>Promotions</h3>
+                    <p>Profitez de nos meilleures offres.</p>
+                </a>
+           </div>
+        </section>
+        
+        <section  class="collection-products-section" id="collection-products-section">
+            <div class="collection-header">
+                <h1 id="collection-title"></h1>
+                <p id="collection-description"></p>
+            </div>
+           
+            <div class="collection-filters">
+                <div class="collection-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="collection-search" placeholder="Rechercher un produit...">
+                </div>
+
+                <div class="collection-filter-group">
+                    <div class="filter-item">
+                        <label for="collection-min-price"> Prix minimum</label>
+                        <input type="number" id="collection-min-price" placeholder="Ex : 10000" min="0">
+                    </div> 
+
+                    <div class="filter-item">
+                        <label for="collection-max-price">Prix maximum</label>
+                        <input type="number" id="collection-max-price" placeholder="Ex : 50000" min="0">
+                    </div>
+
+                    <div class="filter-item">
+                        <label for="collection-sort">Trier par</label>
+
+                        <select id="collection-sort">
+                            <option value="default">
+                                Trier par
+                            </option>
+
+                            <option value="price-asc">
+                                Prix : croissant
+                            </option>
+
+                            <option value="price-desc">
+                                Prix : décroissant
+                            </option>
+
+                            <option value="name-asc">
+                                Nom : A → Z
+                            </option>
+
+                            <option value="name-desc">
+                                Nom : Z → A
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" id="reset-collection-filters" class="reset-collection-btn">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    Réinitialiser
+                </button>
+            </div>
+
+            <div id="collection-products-container" class="collection-products-grid">
+                <!-- Produits générés par collection.js -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="collection.js"></script>
+
+</body>
+</html>

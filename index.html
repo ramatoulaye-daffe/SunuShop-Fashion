@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunuShop | Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- En-tête du site -->
+    <header>
+        <a href="index.html" class="logo">
+            Sunu<span>Shop</span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="favoris.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="panier.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Bannière principale -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="titre">NOUVELLE COLLECTION</p>
+                <h1>
+                    Révéle ton<br>
+                    <span>style unique</span>
+                </h1>
+                <p>
+                    Découvre une sélection de vêtements et
+                    d'accessoires tendance conçus pour révéler
+                    ton élégance au quotidien.
+                </p>
+                <div class="hero-buttons">
+                    <a href="boutique.html" class="btn-primary">
+                        Découvrir la boutique
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="collection.html" class="btn-secondary">
+                        Voir la collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--avantages-->
+        <section class="hero-features">
+            <div class="feature">
+                <i class="fa-solid fa-leaf"></i>
+                <div>
+                    <h3>Qualité premium</h3>
+                    <p>Des produits soigneusement sélectionnés</p>
+                </div>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-shirt"></i>
+                <div>
+                    <h3>Style tendance</h3>
+                    <p>Des modèles adaptés à ton style</p>
+                </div>   
+            </div>    
+            <div class="feature">
+                <i class="fa-regular fa-heart"></i>
+                <div>
+                    <h3>Mode pour tous</h3>
+                    <p>Des articles pour chaque occasion</p>
+                </div>
+            </div>   
+        </section>
+
+        <!-- a propos -->
+        <section class="about">
+            <div class="about-image">
+                <img src="images/apropos-fashion.jpg" alt="Collection de vêtements SunuShop">
+            </div>
+            <div class="about-content">
+                <p class="titre">Bienvenue chez SunuShop</p>
+                <h2>La mode qui révèle <span>ta personnalité</span></h2>
+                <p>
+                    Chez SunuShop, nous croyons que chaque personne possède
+                    un style unique. C'est pourquoi nous proposons une sélection
+                    de vêtements, chaussures et accessoires tendance pour t'aider
+                    à exprimer pleinement ta personnalité.<br><br>
+                </p>
+                <p>
+                    Notre objectif est de te proposer des articles de qualité,
+                    accessibles et adaptés à toutes les occasions.
+                </p>
+                <a href="apropos.html" class="btn">Savoir plus</a>
+            </div>
+        </section>
+
+        <!-- Catégories -->
+        <section class="categories">
+            <div class="titre">
+                <p>Explorez notre boutique</p>
+                <h2>Nos catégories</h2>
+            </div>
+            <div class="cat-container">
+                <a href="boutique.html?categorie=robes" class="category-card">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h3>Robes</h3>
+                    <p>Élégantes et tendance</p>
+                </a>
+                <a href="boutique.html?categorie=tshirts" class="category-card">
+                    <i class="fa-solid fa-shirt"></i>
+                    <h3>T-shirts</h3>
+                    <p>Simples et stylés</p>
+                </a>
+                <a href="boutique.html?categorie=chaussures" class="category-card">
+                    <i class="fa-solid fa-shoe-prints"></i>
+                    <h3>Chaussures</h3>
+                    <p>Pour chaque occasion</p>
+                </a>
+                 <a href="boutique.html?categorie=sacs" class="category-card">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Sacs</h3>
+                    <p>Accessoires indispensables</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section Produits vedettes -->
+        <section class="featured-products">
+            <div class="titre">
+                <p>Découvrez les produits les plus appréciés par nos clients.</p>
+                <h2>Nos produits vedettes</h2>
+            </div>
+            <div class="product-contenu">
+                <div class="product-card-contenu">
+                    <div class="product-image">
+                        <img src="images/robe0.jpg" alt="Robe élégante">
+                        <span class="product-badge">Nouveau</span>
+
+                        <button class="favorite-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Robes</p>
+                        <h3>Robe élégante</h3>
+                        <p class="product-price">15 000 FCFA</p>
+
+                        <button  class="add-cart-btn" data-id="1" data-name="Robe élégante"data-price="15000" data-image="images/robe0.jpg">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-contenu">
+                    <div class="product-image">
+                        <img src="images/tshirt1.jpg" alt="T-shirt tendance">
+
+                        <button class="favorite-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">T-shirts</p>
+                        <h3>T-shirt tendance</h3>
+                        <p class="product-price">8 000 FCFA</p>
+
+                        <button class="add-cart-btn" data-id="2" data-name="T-shirt tendance" data-price="8000" data-image="images/tshirt1.jpg">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-contenu">
+                    <div class="product-image">
+                        <img src="images/shoes.jpg" alt="Chaussures modernes">
+
+                        <button class="favorite-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Chaussures</p>
+                        <h3>Chaussures chic</h3>
+                        <p class="product-price">20 000 FCFA</p>
+
+                        <button class="add-cart-btn" data-id="3" data-name="Chaussures modernes" data-price="20000" data-image="images/shoes.jpg">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card-contenu">
+                    <div class="product-image">
+                        <img src="images/sac1.jpg" alt="Sac à main">
+
+                        <button class="favorite-btn">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Sacs</p>
+                        <h3>Sac à main</h3>
+                        <p class="product-price">12 000 FCFA</p>
+
+                        <button class="add-cart-btn" data-id="4" data-name="Sac à main" data-price="12000" data-image="images/sac1.jpg">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Ajouter au panier
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-button">
+                <a href="boutique.html" class="btn">Voir tous les produits</a>
+            </div>
+        </section>
+
+        <!----SECTION PROMOTION-->
+        <section class="promotion-section">
+            <div class="promotion-content">
+                <span class="promotion-badge">
+                    Offre spéciale
+                </span>
+                <h2>
+                    Profitez de nos offres du moment !
+                </h2>
+                <p>
+                    Des produits sélectionnés à prix réduits pour vous
+                    permettre de faire de bonnes affaires.
+                </p>
+                <a href="collection.html" class="promotion-btn">
+                    Profiter de l'offre
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="promotion-product">
+                <span class="discount">
+                    -20%
+                </span>
+                <img
+                    src="images/sneakers.jpg"
+                    alt="Sneakers tendance"
+                >
+                <div class="promotion-product-info">
+                    <h3>Sneakers tendance</h3>
+                    <p class="old-price">
+                        40 000 FCFA
+                    </p>
+                    <p class="new-price">
+                        32 000 FCFA
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION NEWSLETTER-->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <span class="newsletter-icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </span>
+                <h2>
+                    Ne manquez aucune offre !
+                </h2>
+                <p>
+                    Inscrivez-vous à notre newsletter et recevez nos
+                    nouveautés, promotions et offres exclusives
+                    directement dans votre boîte mail.
+                </p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Votre adresse e-mail" required>
+                    <button type="submit">
+                        S'inscrire
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+                <p id="newsletter-message" class="newsletter-message"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <a href="index.html" class="footer-logo">
+                    Sunu<span>Shop</span>
+                </a>
+                <p>
+                    SunuShop vous accompagne dans la découverte
+                    de produits tendance, accessibles et de qualité.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Service client</h3>
+                <ul>
+                    <li>
+                        <a href="#">Livraison</a>
+                    </li>
+                    <li>
+                        <a href="#">Retours et échanges</a>
+                    </li>
+                    <li>
+                        <a href="#">Conditions générales</a>
+                    </li>
+                    <li>
+                        <a href="#">Politique de confidentialité</a>
+                    </li>
+                    <li>
+                        <a href="#">Questions fréquentes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contactez-nous</h3>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Dakar, Sénégal
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    +221 77 000 00 00
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-regular fa-envelope"></i>
+                    contact@sunushop.com
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-regular fa-clock"></i>
+                    Lun - Sam : 09h - 18h
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy;Copyright, 2026 SunuShop. Tous droits réservés.
+            </p>
+            <p>
+                Fait avec ❤️ au Sénégal
+            </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="details.js"></script>
+
+</body>
+</html>

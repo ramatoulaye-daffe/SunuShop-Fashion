@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunuShop | Mes Favoris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">
+            Sunu<span>Shop</span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="favoris.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="panier.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="favorites-page">
+        <section class="favorites-header">
+            <h2>Mes favoris</h2>
+            <p>
+                Retrouvez ici les produits que vous aimez.
+            </p>
+        </section>
+
+        <section class="favorites-section">
+            <div class="favorites-container" id="favorites-container">
+                <!-- Les produits favoris seront affichés ici -->
+            </div>
+            <p class="empty-favorites" id="empty-favorites">
+                Vous n'avez encore aucun favori.
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="produits.js"></script>
+    <script src="collection.js"></script>
+    <script src="boutique.js"></script>
+    
+</body>
+</html>

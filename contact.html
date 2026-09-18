@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunuShop | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <a href="index.html" class="logo">
+            Sunu<span>Shop</span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="panier.html">Panier</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="favoris.html">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="panier.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <span class="contact-subtitle">
+                    <i class="fa-regular fa-envelope"></i>
+                    CONTACTEZ-NOUS
+                </span>
+                <h1>
+                    Parlons de <span>vous</span>
+                </h1>
+                <p>
+                    Une question concernant une commande, un produit ou une livraison ?
+                    Notre équipe est là pour vous accompagner.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+
+                <!-- INFORMATIONS -->
+                <div class="contact-info">
+                    <span class="section-subtitle">
+                        RESTONS EN CONTACT
+                    </span>
+                    <h2>
+                        Nous sommes à votre écoute
+                    </h2>
+                    <p>
+                        N'hésitez pas à nous contacter pour toute question,
+                        suggestion ou demande d'information.
+                        Nous vous répondrons dans les meilleurs délais.
+                    </p>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+221 77 000 00 00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@sunushop.com</p>
+                        </div>
+                    </div>
+                   
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Dakar, Sénégal</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>
+                                Lundi - Samedi : 9h00 - 19h00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="TikTok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                            <a href="#" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMULAIRE -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <span>
+                            ENVOYEZ-NOUS UN MESSAGE
+                        </span>
+                        <h2>
+                            Comment pouvons-nous vous aider ?
+                        </h2>
+                    </div>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"> Téléphone </label>
+                            <input type="tel" id="phone" name="phone"placeholder="+221 77 000 00 00">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject">
+
+                                <option value=""> Sélectionnez un sujet</option>
+
+                                <option value="commande"> Ma commande </option>
+
+                                <option value="livraison"> Livraison</option>
+
+                                <option value="produit"> Question sur un produit  </option>
+
+                                <option value="retour">Retour / échange </option>
+
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="contact-submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-whatsapp">
+            <div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                    <h2>Besoin d'une réponse rapide ?</h2>
+
+                    <p>Contactez-nous directement sur WhatsApp.</p>
+                </div>
+            </div>
+            <a
+                href="https://wa.me/221770000000"
+                target="_blank"
+                class="whatsapp-btn"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+                Écrire sur WhatsApp
+            </a>
+        </section>
+
+        <section class="location-section">
+            <div class="location-header">
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    NOUS TROUVER
+                </span>
+                <h2>
+                    Retrouvez-nous à <strong>Dakar</strong>
+                </h2>
+                <p>
+                    Notre boutique est située à Dakar, au Sénégal.
+                    Venez nous rendre visite ou contactez-nous pour obtenir
+                    plus d'informations sur notre emplacement.
+                </p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Dakar%2C%20S%C3%A9n%C3%A9gal&output=embed"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="location-actions">
+                <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=Dakar%2C%20S%C3%A9n%C3%A9gal"
+                    target="_blank"
+                    class="direction-btn"
+                >
+                    <i class="fa-solid fa-route"></i>
+                    Voir l'itinéraire
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <a href="index.html" class="footer-logo">
+                    Sunu<span>Shop</span>
+                </a>
+                <p>
+                    SunuShop vous accompagne dans la découverte
+                    de produits tendance, accessibles et de qualité.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Service client</h3>
+                <ul>
+                    <li>
+                        <a href="#">Livraison</a>
+                    </li>
+                    <li>
+                        <a href="#">Retours et échanges</a>
+                    </li>
+                    <li>
+                        <a href="#">Conditions générales</a>
+                    </li>
+                    <li>
+                        <a href="#">Politique de confidentialité</a>
+                    </li>
+                    <li>
+                        <a href="#">Questions fréquentes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contactez-nous</h3>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Dakar, Sénégal
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-phone"></i>
+                    +221 77 000 00 00
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-regular fa-envelope"></i>
+                    contact@sunushop.com
+                </p>
+                <p class="footer-contact">
+                    <i class="fa-regular fa-clock"></i>
+                    Lun - Sam : 09h - 18h
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                &copy;Copyright, 2026 SunuShop. Tous droits réservés.
+            </p>
+            <p>
+                Fait avec ❤️ au Sénégal
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const contactForm =
+            document.getElementById("contact-form");
+        if (contactForm) {
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert(
+                    "Merci pour votre message ! Nous vous répondrons bientôt."
+                );
+                contactForm.reset();
+            });
+        }
+    </script>
+
+</body>
+</html>
